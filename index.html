@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Game</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="guid container">
+      <h1 class="title">Word Game</h1>
+      <p class="explanation">
+        <span id="explanation-span">Explanation:</span> If the entered
+        <span>Words-List</span> concides with the entered <span>Pattern</span>,
+        the result will be Correct.
+      </p>
+      <ul>
+        <li><span>Pattern</span> can not accept space</li>
+        <li>
+          <span>Pattern</span> and <span>Words-List</span> and can accept only
+          lowercase letters
+        </li>
+        <li>Length of <span>Pattern</span> should be lower than 300</li>
+        <li>Length of <span>Words-List</span> should be lower than 3000</li>
+        <li>
+          Start point and End point of the <span>Words-List</span> string can
+          not be space
+        </li>
+        <li>
+          Words in the <span>Words-List</span> are seperated only with space
+        </li>
+      </ul>
+      <p class="correct-example example">
+        <span>Correct example:</span> pattern: abba | Words-List: red blue blue
+        red
+      </p>
+      <p class="incorrect-example example">
+        <span>Incorrect example:</span> Pattern: abba | Words-list: red red blue
+        red
+      </p>
+    </div>
+    <div class="input-section container">
+      <label for="pattern">Enter the Pattern:</label>
+      <input type="text" id="pattern" placeholder="example: abbc" />
+      <label for="words">Enter Words:</label>
+      <input
+        type="text"
+        id="words"
+        placeholder=" example: red blue blue grey"
+      />
+      <button type="button" class="btn" id="btn">Check</button>
+      <p id="result">Result:</p>
+    </div>
+  </body>
+</html>
