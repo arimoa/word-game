@@ -1,7 +1,7 @@
-let btnEl = document.getElementById("btn");
-let patternEl = document.getElementById("pattern");
-let wordsEl = document.getElementById("words");
-let resultEl = document.getElementById("result");
+const btnEl = document.getElementById("btn");
+const patternEl = document.getElementById("pattern");
+const wordsEl = document.getElementById("words");
+const resultEl = document.getElementById("result");
 let patternValue;
 let wordsValue;
 
